@@ -23,7 +23,7 @@ const FILES_TO_CACHE = [
 self.addEventListener('install', function (evt) {
 	evt.waitUntil(
 		caches.open(CACHE_NAME).then((cache) => {
-			console.log('Your files ere pre-cached succesfully! Yes!');
+			console.log('Your files are pre-cached successfully! Yes!');
 			return cache.addAll(FILES_TO_CACHE);
 		})
 	);
