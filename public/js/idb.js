@@ -1,75 +1,67 @@
 let db;
-const request = indexedDB.open('budget_tracker', 1);
 
-request.onupgradeneeded = function(event) {
-  const db = event.target.result;
-  db.createObjectStore('new_budget', { autoIncrement: true });
+const request = indexedDB.open('budget', 1);
+
+request.onupgradeneeded = function (event) {
+    const db = event.target.result;
+
+    db.createObjectStore('new_expense', { autoIncrement: true })
 };
 
-request.onsuccess = function(event) {
-  // when db is successfully created with its object store 
-  // (from onupgradedneeded event above), save reference to db in global variable
-  db = event.target.result;
+request.onsuccess = function (event) {
+    db = event.target.result;
 
-  // check if  our budget app is online, if yes run checkDatabase() function to send all local db data to api
-  if (navigator.onLine) {
-    uploadBudget();
-  }
+    if (navigator.online) {
+        checkDatabase();
+    }
 };
 
-request.onerror = function(event) {
-  // log error here
-  console.log(event.target.errorCode);
+request.onerror = function (event) {
+    console.log(event.target.errorCode)
 };
 
 function saveRecord(record) {
-  const transaction = db.transaction(['new_budget'], 'readwrite');
+    const transaction = db.transaction(['new_expense'], 'readwrite');
 
-  const budgetObjectStore = transaction.objectStore('new_budget');
+    const expenseObjectStore = transaction.objectStore('new_expense');
 
-  // add record to your store with add method.
-  budgetObjectStore.add(record);
+    expenseObjectStore.add(record);
 }
 
-function uploadBudget() {
-    // open a transaction on our pending db
-    const transaction = db.transaction(['new_budget'], 'readwrite');
+function checkDatabase() {
+    const transaction = db.transaction(['new_expense'], 'readwrite');
 
-    // access our pending object store
-    const budgetObjectStore = transaction.objectStore('new_budget');
+    const expenseObjectStore = transaction.objectStore('new_expense');
 
-    // get all records from store and set to a var
-    const getAll = budgetObjectStore.getAll();
-
-    getAll.onsuccess = function() {
-        // if there was data in indexedDb's store, send it to the api server
+    const getAll = expenseObjectStore.getAll();
+    getAll.onsuccess = function () {
         if (getAll.result.length > 0) {
-            fetch('/api/pizzas', {
+            console.log(JSON.stringify(getAll.result))
+            fetch('/api/transaction', {
                 method: 'POST',
                 body: JSON.stringify(getAll.result),
                 headers: {
                     Accept: 'application/json, text/plain, */*', 'Content-Type': 'application/json'
                 }
             })
-            .then(response => response.json())
-            .then(serverResponse => {
-                if (serverResponse.message) {
-                    throw new Error(serverResponse);
-                }
+                .then(response => {
+                    console.log(response)
+                    return response.json()
+                })
+                .then((serverResponse) => {
+                    if(serverResponse.message){
+                        throw new Error(serverResponse);
+                    }
+                    const transaction = db.transaction(['new_expense'], 'readwrite');
 
-                const transaction = db.transaction(['new_budget'], 'readwrite');
-                const budgetObjectStore = transaction.objectStore('new_budget');
-                // clear all items in store
-                budgetObjectStore.clear();
-            })
-            .catch(err => {
-                // set reference to redirect back here
-                console.log(err);
-            })
-           
+                    const expenseObjectStore = transaction.objectStore('new_expense');
+
+                    expenseObjectStore.clear();
+
+                    alert('Transactions have been submitted')
+                })
+                .catch(err => console.log(err));
         }
-    };
-}
-
-// listen for budget app to come back online
-window.addEventListener('online', uploadBudget);
+    }
+};
+window.addEventListener('online', checkDatabase)

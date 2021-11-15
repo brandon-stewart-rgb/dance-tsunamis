@@ -1,99 +1,178 @@
-# 19 Progressive Web Applications (PWA): Budget Tracker
-
-Giving users a fast and easy way to track their money is important, but allowing them to access that information at any time is even more important. Having offline functionality is paramount to the success of an application that handles users’ financial information.
-
-Your challenge this week is to add functionality to an existing budget tracker application to allow for offline access and functionality. The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should update the total when brought back online. Finally, you’ll deploy the application to Heroku.
-
-Before you start, clone the [starter code](https://github.com/coding-boot-camp/symmetrical-bassoon).
-
-> **On the Job:** When web developers are working on a feature request or trying to kill a bug, they rarely have all the information they need to solve the task in front of them. Being a successful developer requires you to combine knowledge that you’ve picked up from different applications you’ve worked on in the past to formulate a solution.
-> 
-> This Challenge will ask you to combine several tasks that you’ve learned over this module and the previous one to add offline functionality to an existing application. We’ve outlined how you can achieve this in the Getting Started section below.
+![License Badge](https://img.shields.io/static/v1?label=license&message=MIT+License&color=brightgreen&style=for-the-badge)
+<br />
+<br />
+<p align="center">
 
 
-## User Story
+  <h1 align="center">React Portfolio</h1>
 
-```md
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling 
-```
-
-## Acceptance Criteria
-
-```md
-GIVEN a Budget Tracker without an internet connection
-WHEN the user inputs an expense or deposit
-THEN they will receive a notification that they have added an expense or deposit
-WHEN the user reestablishes an internet connection
-THEN the deposits or expenses added while they were offline are added to their transaction history and their totals are updated
-```
-
-## Mock-Up
-
-The following image shows the web application's appearance and functionality:
-
-![Challenge Demo](./Assets/19-pwa-homework-demo-01.png)
+  <p align="center">
+    A React portfolio demonstrating my latest projects.
+    <br />
+    <a href="https://github.com/brandon-stewart-rgb/grumpy-milkshake"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://brandon-stewart-rgb.github.io/grumpy-milkshake/">VIEW LIVE SITE</a>
+    ·
+    <a href="https://github.com/brandon-stewart-rgb/grumpy-milkshake/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/brandon-stewart-rgb/grumpy-milkshake/issues">Request Feature</a>
+  </p>
+</p>
 
 
-## Getting Started
 
-Revisit the following lessons to complete this challenge:
-
-### Offline Functionality
-
-You’ll need to use IndexedDB to add offline functionality. Review Module 18: NoSQL, Lesson 4: Add Offline Persistence with IndexedDB as a refresher on how to add this to your application.
-
-You’ll also need to add a service worker to your application. Review Module 19: Progressive Web Applications (PWA), Lesson 4: Using Service Workers as a refresher on how to add this to your application.
-
-> **Rewind:** The Food Festival application that you created in this module's lessons did not include an Express.js server, so you used the `webpack-dev-server` npm module to test the service worker with an HTTPS-enabled server.
-> 
-> For this Challenge, however, you aren't using webpack, but you do have an Express.js server provided to you in the starter code. Remember that Chrome DevTools makes it possible to test service workers on localhost in development. Simply click on the Application tab in the tools, then select Service Workers from the left hand navigation.
-
-> **Important:** You should add both of the files to handle this functionality to the `public/js/` directory of your application.
-
-Once you’ve updated the existing budget tracker, it should provide the following functionality:
-
-* The ability to enter deposits offline.
-
-* The ability to enter expenses offline.
-
-* Offline entries should be added to the tracker when the application is brought back online.
-
-### Web Manifest
-
-Because this will be a mobile-first application, you’ll also need to add a web manifest to your application with the app’s metadata to let users’ devices know what they’re installing and how the app should look on the home screen.
-
-This `manifest.json` file for this project will contain the following properties:
-
-* `name`
-
-* `short_name`
-
-* `icons`
-
-* `theme_color`
-
-* `background_color`
-
-* `start_url`
-
-* `display`
-
-> **Important:** In the module project, you used webpack to create the `manifest.json` file. For this application, you’ll need to create it manually and add it to the `public/` directory of your application. You can also review **Module 19: Progressive Web Applications (PWA), Lesson 5: PWA** as a refresher on web manifests.
-
-### Deployment to Heroku Using MongoDB Atlas
-
-Finally, the budget tracker has a server and uses MongoDB as its database, so you’ll need to deploy this application to Heroku using MongoDB Atlas. To review this process, look at Module 18: NoSQL, Lesson 5: Add Mongoose Validation, specifically 18.5.5: Deploy to Heroku.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
 
-## Review
 
-You are required to submit BOTH of the following for review:
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-* The URL of the functional, deployed application.
+![Screenshot ](public/images/ss.png)
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+### Built With
+
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* [Node.js](https://getbootstrap.com)
+* [React](https://jquery.com)
+* [Bulma](https://bulma.io/)
+* [Photoshop](https://www.adobe.com/)
+* [Illustrator](https://www.adobe.com/)
+
+
+
+<!-- GETTING STARTED -->
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* Node.js
+  ```sh
+  https://nodejs.org/en/
+  ```
+
+### Installation
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+ 
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Use this software at your own risk, the content is copyrighted.
+
+
+
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/brandon-stewart-rgb/grumpy-milkshake/issues) for a list of proposed features (and known issues).
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+<!-- CONTACT -->
+## Contact
+
+Brandon Stewart -  - brandon@brandon.com
+
+Project Link: [https://github.com/brandon-stewart-rgb/grumpy-milkshake](https://github.com/brandon-stewart-rgb/grumpy-milkshake)
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Img Shields](https://shields.io)
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Pages](https://pages.github.com)
+* [Animate.css](https://daneden.github.io/animate.css)
+* [Loaders.css](https://connoratherton.com/loaders)
+* [Slick Carousel](https://kenwheeler.github.io/slick)
+* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+* [Sticky Kit](http://leafo.net/sticky-kit)
+* [JVectorMap](http://jvectormap.com)
+* [Font Awesome](https://fontawesome.com)
+
+
+
+
+
