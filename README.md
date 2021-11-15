@@ -4,19 +4,19 @@
 <p align="center">
 
 
-  <h1 align="center">React Portfolio</h1>
+  <h1 align="center">Budget Tracker</h1>
 
   <p align="center">
-    A React portfolio demonstrating my latest projects.
+    Allowing them to access that information offline with this PWA. Having offline functionality is paramount to the success of an application that handles users’ financial information.
     <br />
-    <a href="https://github.com/brandon-stewart-rgb/grumpy-milkshake"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/brandon-stewart-rgb/dance-tsunamis"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://brandon-stewart-rgb.github.io/grumpy-milkshake/">VIEW LIVE SITE</a>
     ·
-    <a href="https://github.com/brandon-stewart-rgb/grumpy-milkshake/issues">Report Bug</a>
+    <a href="https://github.com/brandon-stewart-rgb/dance-tsunamis/issues">Report Bug</a>
     ·
-    <a href="https://github.com/brandon-stewart-rgb/grumpy-milkshake/issues">Request Feature</a>
+    <a href="https://github.com/brandon-stewart-rgb/dance-tsunamis/issues">Request Feature</a>
   </p>
 </p>
 
@@ -53,7 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Screenshot ](public/images/ss.png)
+![Screenshot ](public/assets/images/ss.png)
 
 
 
@@ -61,11 +61,12 @@
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Node.js](https://getbootstrap.com)
-* [React](https://jquery.com)
-* [Bulma](https://bulma.io/)
-* [Photoshop](https://www.adobe.com/)
-* [Illustrator](https://www.adobe.com/)
+* [Express](https://expressjs.com/)
+* [Mongoose](https://mongoosejs.com/)
+* [Nodemon](https://www.npmjs.com/package/nodemon)
+* [morgan](https://www.npmjs.com/package/morgan)
 
+ 
 
 
 <!-- GETTING STARTED -->
@@ -126,7 +127,7 @@ Use this software at your own risk, the content is copyrighted.
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/brandon-stewart-rgb/grumpy-milkshake/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/brandon-stewart-rgb/dance-tsunamis/issues) for a list of proposed features (and known issues).
 
 
 
@@ -154,7 +155,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Brandon Stewart -  - brandon@brandon.com
 
-Project Link: [https://github.com/brandon-stewart-rgb/grumpy-milkshake](https://github.com/brandon-stewart-rgb/grumpy-milkshake)
+Project Link: [https://github.com/brandon-stewart-rgb/dance-tsunamis](https://github.com/brandon-stewart-rgb/dance-tsunamis)
 
 
 
