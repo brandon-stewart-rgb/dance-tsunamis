@@ -12,7 +12,7 @@
     <a href="https://github.com/brandon-stewart-rgb/dance-tsunamis"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://brandon-stewart-rgb.github.io/grumpy-milkshake/">VIEW LIVE SITE</a>
+    <a href="https://budget--track.herokuapp.com/">VIEW LIVE APP</a>
     ·
     <a href="https://github.com/brandon-stewart-rgb/dance-tsunamis/issues">Report Bug</a>
     ·
@@ -35,7 +35,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -60,7 +59,7 @@
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Node.js](https://getbootstrap.com)
+* [Node.js](https://nodejs.com)
 * [Express](https://expressjs.com/)
 * [Mongoose](https://mongoosejs.com/)
 * [Nodemon](https://www.npmjs.com/package/nodemon)
@@ -82,7 +81,7 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
-Use this software at your own risk, the content is copyrighted.
+Use this software at your own risk.
 
 
 
@@ -127,12 +126,6 @@ Project Link: [https://github.com/brandon-stewart-rgb/dance-tsunamis](https://gi
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
 * [Font Awesome](https://fontawesome.com)
 
 
