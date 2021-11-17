@@ -20,6 +20,10 @@ const FILES_TO_CACHE = [
 	'/assets/images/icons/icon-192x192.png',
 	'/assets/images/icons/icon-384x384.png',
 	'/assets/images/icons/icon-512x512.png',
+	"./dist/app.bundle.js",
+	"./dist/events.bundle.js",
+	"./dist/tickets.bundle.js",
+	"./dist/schedule.bundle.js"
 ];
 
 // install the service worker
@@ -39,10 +43,10 @@ self.addEventListener('fetch', function(evt){
 	if (evt.request.url.includes('/api/')) {
 		evt.respondWith(
 			caches.open(DATA_CACHE_NAME).then(cache => {
-				return fetch(event.request)
+				return fetch(evt.request)
 				.then(response => {
 					if (response.status=== 200) {
-						cache.put(event.request.url, response.clone());
+						cache.put(evt.request.url, response.clone());
 					}
 					return response;
 				});
@@ -79,7 +83,7 @@ self.addEventListener('activate', function (evt) {
 		})
 		
 	);
-	// self.clients.claim();
+	self.clients.claim();
 });
 
 
