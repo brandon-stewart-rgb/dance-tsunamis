@@ -2,17 +2,14 @@
   "name": "budget-app",
   "version": "1.0.0",
   "engines": {
-    "node": "14.17.4"
-  }
+    "node": "14.17.4" 
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon server.js",
-    "lite-server": "lite-server",
-    "webpack": "webpack --watch",
-    "build": "webpack",
-    "start:dev": "webpack-dev-server"
+    "start": "node server.js",
+    "lite-server": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -31,6 +28,4 @@
     "morgan": "^1.9.1",
     "nodemon": "^2.0.15"
   }
-
 }
-
