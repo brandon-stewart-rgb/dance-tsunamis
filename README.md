@@ -7,7 +7,7 @@
   <h1 align="center">Budget Tracker</h1>
 
   <p align="center">
-    Allowing them to access that information offline with this PWA. Having offline functionality is paramount to the success of an application that handles users’ financial information.
+    Allowing them to access that information offline with this PWA... Having offline functionality is paramount to the success of an application that handles users’ financial information.
     <br />
     <a href="https://github.com/brandon-stewart-rgb/dance-tsunamis"><strong>Explore the docs »</strong></a>
     <br />
