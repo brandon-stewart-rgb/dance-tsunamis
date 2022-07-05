@@ -4,7 +4,7 @@
 <p align="center">
 
 
-  <h1 align="center">Budget Tracker</h1>
+  <h1 align="center">Budget Tracker</h1> 
 
   <p align="center">
     Allowing them to access that information offline with this PWA... Having offline functionality is paramount to the success of an application that handles users’ financial information.
